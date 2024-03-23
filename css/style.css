@@ -4,7 +4,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 ::selection{
@@ -23,7 +23,7 @@ img {
 
 .container-fluid {
     width: 100%;
-    padding: 0 30px;
+    padding: 0 32px;
     margin: 0 auto;
 }
 
@@ -35,26 +35,27 @@ img {
 /* header start */
 
 header {
-    padding-top: 30px;
+    padding-top: 28px;
 }
 
 header .container-fluid .row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    align-items: center;
 }
 
 header .container-fluid .row .head-left {
-    padding-bottom: 20px;
+    padding-bottom: 16px;
 }
 
 header .container-fluid .row .head-left .btn {
-    width: 260px;
+    width: 314px;
     background: #dbdbdb52;
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding: 13px 30px 13px 15px;
     border-radius: 16px;
+    padding: 20px 28px 20px 10px;
 }
 
 header .container-fluid .row .head-left .btn input {
@@ -63,32 +64,36 @@ header .container-fluid .row .head-left .btn input {
     background: transparent;
 }
 
-header .container-fluid .row .head-left .btn input::placeholder {
-    font-size: 17px;
-    color: #00000070;
+header .container-fluid .row .head-left .btn button{
+    border: none;
+    cursor: pointer;
 }
 
-header .container-fluid .row .head-left .btn a img {
-    width: 20px;
+header .container-fluid .row .head-left .btn input::placeholder {
+    font-size: 17px;
+    letter-spacing: .5px;
+    color: #00000070;
 }
 
 header .container-fluid .row .head-middle {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
+}
+header .container-fluid .row .head-right{
+    align-items: center;
 }
 
-header .container-fluid .row .head-right {
-    padding-bottom: 20px;
+header .container-fluid .row .head-right ul{
     display: flex;
     justify-content: right;
     align-items: center;
+    gap: 10px;
 }
 
 header .container-fluid .row .head-bottom {
     grid-column: span 3;
-    padding: 20px 0;
+    padding: 24px 0;
     border-top: 1px solid #00000041;
 }
 
@@ -96,11 +101,11 @@ header .container-fluid .row .head-bottom ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 75px;
 }
 
 header .container-fluid .row .head-bottom ul li a {
-    font-size: 18px;
+    font-size: 20px;
     color:
         #000000b6;
 }
@@ -108,10 +113,6 @@ header .container-fluid .row .head-bottom ul li a {
 /* header complete */
 /* ............................................ */
 /* home start */
-
-section.home {
-    padding-top: 5px;
-}
 
 section.home .container-full .row {
     display: grid;
@@ -122,14 +123,18 @@ section.home .container-full .row .card {
     position: relative;
 }
 
+section.home .container-full .row .card img{
+    width: 100%;
+}
+
 section.home .container-full .row .card-content {
     position: absolute;
-    right: 40px;
-    bottom: 30px;
+    right: 45px;
+    bottom: 33px;
 }
 
 section.home .container-full .row .card-content h2 {
-    font-size: 30px;
+    font-size: 34px;
     color: #ffffff;
 }
 
@@ -137,50 +142,49 @@ section.home .container-full .row .card-content h2 {
 /* ........................ */
 /* collection start */
 
-section.collection {
-    padding-top: 50px;
-}
-
 section.collection .container .section-heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 30px;
+    padding-top: 56px;
+    padding-bottom: 40px;
 }
 
 section.collection .container .section-heading .heading h2 {
     font-size: 48px;
 }
 
-section.collection .container .section-heading .icon {
-    display: flex;
-    gap: 10px;
-    align-items: center;
+section.collection .container .section-heading a.icon {
     border: 1px solid #438565;
-    padding: 10px 30px;
+    padding: 7px 23px;
     border-radius: 12px;
+    align-items: center;
+    display: flex;
+    gap: 13px;
 }
 
-section.collection .container .section-heading .icon a {
+ section.collection .container .section-heading .icon span {
     color: #438565;
 }
 
 section.collection .container .section-heading .icon i {
     color: #438565;
+    align-items: center;
 }
 
 section.collection .container .row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    grid-column-gap: 50px;
+    grid-gap: 56px;
 }
 
 section.collection .container .row .card {
     background: #ffffff7e;
     border: 1px solid #00000041;
     border-radius: 16px;
+    padding: 17px;
     position: relative;
+    max-height: 493px;
 }
 
 section.collection .container .row .card .new {
@@ -188,9 +192,8 @@ section.collection .container .row .card .new {
     right: -20px;
     top: 5px;
     background:
-        #F88240;
+    #F88240;
     padding: 5px 15px;
-    /* border-radius: 0px 10px 0px 10px; */
     transform: skew(-20deg);
 }
 
@@ -200,7 +203,6 @@ section.collection .container .row .card .new a {
 }
 
 section.collection .container .row .card .card-img img {
-    padding: 18px;
     padding-bottom: 5px;
     width: 100%;
 }
@@ -209,7 +211,6 @@ section.collection .container .row .card .card-content .card-content-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px;
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -219,8 +220,7 @@ section.collection .container .row .card .card-content .card-content-top .produc
 }
 
 section.collection .container .row .card .card-content .card-content-middle {
-    padding: 18px;
-    padding-top: 5px;
+    padding-top: 4px;
     padding-bottom: 0;
 }
 
@@ -232,9 +232,6 @@ section.collection .container .row .card .card-content .card-content-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 
@@ -244,13 +241,13 @@ section.collection .container .row .card .card-content .card-content-bottom .pro
 
 section.collection .container .row .card .card-content .card-content-bottom .product-cart {
     background: #438565;
-    padding: 15px;
+    padding: 10px 12px;
     border-radius: 50%;
 }
 
-section.collection .container .row .card .card-content .card-content-bottom .product-cart i {
-    font-size: 20px;
-    color: #ffffff;
+section.collection .container .row .card .card-content .card-content-bottom .product-cart img {
+    width: 100%;
+    text-align: center;
 }
 
 /* collection end */
@@ -258,19 +255,20 @@ section.collection .container .row .card .card-content .card-content-bottom .pro
 /* discount start */
 
 section.discount {
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
-section.discount .container-full .row marquee {
+section.discount .container-full .row {
     background: #ffffff7e;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 20px 0;
+    padding: 30px 0;
 }
 
-section.discount .container-full .row marquee .slide-img {
+section.discount .container-full .row  .slide-img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 0px 0 29px;
 }
 
 /* discount end */
@@ -279,53 +277,54 @@ section.discount .container-full .row marquee .slide-img {
 
 
 section.t-shirt {
-    padding-top: 50px;
-    padding-bottom: 100px;
+    padding-top: 110px;
+    padding-bottom: 80px;
 }
 
 section.t-shirt .container .section-heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 30px;
+    padding-bottom: 53px;
 }
 
 section.t-shirt .container .section-heading .heading h2 {
     font-size: 48px;
 }
 
-section.t-shirt .container .section-heading .icon {
-    display: flex;
-    gap: 10px;
-    align-items: center;
+section.t-shirt .container .section-heading a.icon {
     border: 1px solid #438565;
-    padding: 10px 30px;
+    padding: 7px 23px;
     border-radius: 12px;
+    align-items: center;
+    display: flex;
+    gap: 13px;
 }
 
-section.t-shirt .container .section-heading .icon a {
+ section.t-shirt .container .section-heading .icon span {
     color: #438565;
 }
 
 section.t-shirt .container .section-heading .icon i {
     color: #438565;
+    align-items: center;
 }
 
 section.t-shirt .container .row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    grid-column-gap: 50px;
+    grid-gap: 56px;
 }
 
 section.t-shirt .container .row .card {
     background: #ffffff7e;
     border: 1px solid #00000041;
     border-radius: 16px;
+    max-height: 493px;
+    padding: 17px;
 }
 
 section.t-shirt .container .row .card .card-img img {
-    padding: 18px;
     padding-bottom: 5px;
     width: 100%;
 }
@@ -334,7 +333,6 @@ section.t-shirt .container .row .card .card-content .card-content-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px;
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -344,7 +342,6 @@ section.t-shirt .container .row .card .card-content .card-content-top .product-n
 }
 
 section.t-shirt .container .row .card .card-content .card-content-middle {
-    padding: 18px;
     padding-top: 5px;
     padding-bottom: 0;
 }
@@ -357,9 +354,6 @@ section.t-shirt .container .row .card .card-content .card-content-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 section.t-shirt .container .row .card .card-content .card-content-bottom .product-price h5 {
@@ -368,13 +362,12 @@ section.t-shirt .container .row .card .card-content .card-content-bottom .produc
 
 section.t-shirt .container .row .card .card-content .card-content-bottom .product-cart {
     background: #438565;
-    padding: 15px;
+    padding: 10px 12px;
     border-radius: 50%;
 }
 
-section.t-shirt .container .row .card .card-content .card-content-bottom .product-cart i {
-    font-size: 20px;
-    color: #ffffff;
+section.t-shirt .container .row .card .card-content .card-content-bottom .product-cart img {
+    width: 100%;
 }
 
 /* t shirt end */
@@ -383,7 +376,6 @@ section.t-shirt .container .row .card .card-content .card-content-bottom .produc
 
 
 section.socks-cap {
-    padding-top: 50px;
     padding-bottom: 100px;
     background: #FAFAFA;
 }
@@ -392,45 +384,46 @@ section.socks-cap .container .section-heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 30px;
+    padding-top: 88px;
+    padding-bottom: 53px;
 }
 
 section.socks-cap .container .section-heading .heading h2 {
     font-size: 48px;
 }
 
-section.socks-cap .container .section-heading .icon {
-    display: flex;
-    gap: 10px;
-    align-items: center;
+section.socks-cap .container .section-heading a.icon {
     border: 1px solid #438565;
-    padding: 10px 30px;
+    padding: 7px 23px;
     border-radius: 12px;
+    align-items: center;
+    display: flex;
+    gap: 13px;
 }
 
-section.socks-cap .container .section-heading .icon a {
+ section.socks-cap .container .section-heading .icon span {
     color: #438565;
 }
 
 section.socks-cap .container .section-heading .icon i {
     color: #438565;
+    align-items: center;
 }
 
 section.socks-cap .container .row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    grid-column-gap: 50px;
+    grid-gap: 56px;
 }
 
 section.socks-cap .container .row .card {
     background: #ffffff7e;
     border: 1px solid #00000041;
     border-radius: 16px;
+    padding: 17px;
 }
 
 section.socks-cap .container .row .card .card-img img {
-    padding: 18px;
     padding-bottom: 5px;
     width: 100%;
 }
@@ -439,7 +432,6 @@ section.socks-cap .container .row .card .card-content .card-content-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px;
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -449,7 +441,6 @@ section.socks-cap .container .row .card .card-content .card-content-top .product
 }
 
 section.socks-cap .container .row .card .card-content .card-content-middle {
-    padding: 18px;
     padding-top: 5px;
     padding-bottom: 0;
 }
@@ -462,9 +453,6 @@ section.socks-cap .container .row .card .card-content .card-content-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 section.socks-cap .container .row .card .card-content .card-content-bottom .product-price h5 {
@@ -473,13 +461,12 @@ section.socks-cap .container .row .card .card-content .card-content-bottom .prod
 
 section.socks-cap .container .row .card .card-content .card-content-bottom .product-cart {
     background: #438565;
-    padding: 15px;
+    padding: 10px 12px;
     border-radius: 50%;
 }
 
-section.socks-cap .container .row .card .card-content .card-content-bottom .product-cart i {
-    font-size: 20px;
-    color: #ffffff;
+section.socks-cap .container .row .card .card-content .card-content-bottom .product-cart img {
+   width: 100%;
 }
 
 
@@ -489,53 +476,54 @@ section.socks-cap .container .row .card .card-content .card-content-bottom .prod
 
 
 section.women {
-    padding-top: 50px;
-    padding-bottom: 100px;
+    padding-top: 80px;
+    padding-bottom: 90px;
 }
 
 section.women .container .section-heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
 
 section.women .container .section-heading .heading h2 {
     font-size: 48px;
 }
 
-section.women .container .section-heading .icon {
-    display: flex;
-    gap: 10px;
-    align-items: center;
+section.women .container .section-heading a.icon {
     border: 1px solid #438565;
-    padding: 10px 30px;
+    padding: 7px 23px;
     border-radius: 12px;
+    align-items: center;
+    display: flex;
+    gap: 13px;
 }
 
-section.women .container .section-heading .icon a {
+ section.women .container .section-heading .icon span {
     color: #438565;
 }
 
 section.women .container .section-heading .icon i {
     color: #438565;
+    align-items: center;
 }
 
 section.women .container .row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    grid-column-gap: 50px;
+    grid-gap: 56px;
 }
 
 section.women .container .row .card {
     background: #ffffff7e;
     border: 1px solid #00000041;
     border-radius: 16px;
+    max-height: 493px;
+    padding: 17px;
 }
 
 section.women .container .row .card .card-img img {
-    padding: 18px;
     padding-bottom: 5px;
     width: 100%;
 }
@@ -544,7 +532,6 @@ section.women .container .row .card .card-content .card-content-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px;
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -554,7 +541,6 @@ section.women .container .row .card .card-content .card-content-top .product-nam
 }
 
 section.women .container .row .card .card-content .card-content-middle {
-    padding: 18px;
     padding-top: 5px;
     padding-bottom: 0;
 }
@@ -567,9 +553,6 @@ section.women .container .row .card .card-content .card-content-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 section.women .container .row .card .card-content .card-content-bottom .product-price h5 {
@@ -578,13 +561,12 @@ section.women .container .row .card .card-content .card-content-bottom .product-
 
 section.women .container .row .card .card-content .card-content-bottom .product-cart {
     background: #438565;
-    padding: 15px;
+    padding: 10px 12px;
     border-radius: 50%;
 }
 
-section.women .container .row .card .card-content .card-content-bottom .product-cart i {
-    font-size: 20px;
-    color: #ffffff;
+section.women .container .row .card .card-content .card-content-bottom .product-cart img {
+   width: 100%;
 }
 
 /* women end */
@@ -592,16 +574,20 @@ section.women .container .row .card .card-content .card-content-bottom .product-
 /* footer start */
 
 footer {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 77px;
+    padding-bottom: 78px;
     background: #438565;
     color: #ffffff;
 }
 
+footer .container-fluid{
+    padding-left: 80px;
+}
+
 footer .container-fluid .row {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 100px;
+    grid-template-columns: max-content max-content max-content 1fr;
+    gap: 124px;
 }
 
 footer .container-fluid .row h3 {
@@ -611,15 +597,18 @@ footer .container-fluid .row h3 {
 
 
 footer .container-fluid .row ul {
-    padding-top: 10px;
+    padding-top: 9px;
 }
 
 footer .container-fluid .row ul li {
-    padding-top: 15px;
+    padding-top: 8px;
+    font-weight: 300;
 }
 
 footer .container-fluid .row ul li a {
-    color: #ffffff;
+    font-size: 21px;
+    color: #ffffff80;
+    font-weight: 300;
 }
 
 footer .container-fluid .row .footer-contain4 {
@@ -641,3 +630,20 @@ footer .container-fluid .row .footer-contain4 .footer-icon i {
 }
 
 /* footer end */
+
+.product-color img{
+    width: 18px;
+}
+
+
+@media only screen and (min-width:1800px) {
+    .container-full{
+        max-width: 1300px;
+        width: 100%;
+        margin: auto;
+    }
+}
+
+
+
+/* slider css */

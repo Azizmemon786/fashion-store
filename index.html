@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
@@ -14,19 +18,24 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="head-left">
-                    <div class="btn">
-                        <input type="search" placeholder="Search something...">
-                        <a href="#"> <img src="./img/Icons (3).png" alt=""> </a>
-                    </div>
+                    <form class="btn">
+                        <input type="text" placeholder="Search something...">
+                        <button type="submit"><img src="./img/Icons (3).png" alt=""></button>
+                    </form>
                 </div>
                 <div class="head-middle">
                     <a href="#"><img src="./img/Group 1.png" alt=""></a>
                 </div>
                 <div class="head-right">
-                    <img src="./img/Icons.png" alt="">
-                    <img src="./img/Icons (1).png" alt="">
-                    <img src="./img/Group 51.png" alt="">
-                    <img src="./img/Icons (2).png" alt="">
+                    <ul>
+                        <li><a href="#"><img src="./img/Icons.png" alt=""></a></li>
+                        <li><a href="#"> <img src="./img/Icons (1).png" alt="">
+                            </a></li>
+                        <li><a href="#"> <img src="./img/Group 51.png" alt="">
+                            </a></li>
+                        <li><a href="#"> <img src="./img/Icons (2).png" alt="">
+                            </a></li>
+                    </ul>
                 </div>
                 <div class="head-bottom">
                     <ul>
@@ -44,41 +53,41 @@
     <section class="home">
         <div class="container-full">
             <div class="row">
-                <div class="card">
+                <a href="#" class="card">
                     <div class="card-img">
                         <img src="./img/Rectangle 1.png" alt="">
                     </div>
                     <div class="card-content">
                         <h2>Fog special</h2>
                     </div>
-                </div>
+                </a>
 
-                <div class="card">
+                <a href="#" class="card">
                     <div class="card-img">
                         <img src="./img/Rectangle 2.png" alt="">
                     </div>
                     <div class="card-content">
                         <h2>Women</h2>
                     </div>
-                </div>
+                </a>
 
-                <div class="card">
+                <a href="#" class="card">
                     <div class="card-img">
                         <img src="./img/Rectangle 3.png" alt="">
                     </div>
                     <div class="card-content">
                         <h2>Men</h2>
                     </div>
-                </div>
+                </a>
 
-                <div class="card">
+                <a href="#" class="card">
                     <div class="card-img">
                         <img src="./img/Rectangle 4.png" alt="">
                     </div>
                     <div class="card-content">
                         <h2>New</h2>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -89,20 +98,21 @@
                 <div class="heading">
                     <h2>New collection</h2>
                 </div>
-                <div class="icon">
-                    <a href="#">More</a>
-                    <i class="ri-arrow-right-line"></i>
-                </div>
+                
+                <a href="#" class="icon">
+                    <span>More</span> <img src="./img/more-icon.png" alt=""></a>
+                </a>
+
             </div>
             <div class="row">
 
-                <div class="card">
+            <div class="card">
                     <div class="new">
                         <a href="#">New</a>
                     </div>
-                    
+
                     <div class="card-img">
-                        <img src="./img/Rectangle 8.png" alt="">
+                       <a href="#"><img src="./img/Rectangle 8.png" alt=""></a> 
                     </div>
                     <div class="card-content">
                         <div class="card-content-top">
@@ -122,9 +132,9 @@
                             <div class="product-price">
                                 <h5>$120,000</h5>
                             </div>
-                            <div class="product-cart">
-                                <a href="#"> <a href="#"><i class="ri-shopping-cart-line"></i></a> </a>
-                            </div>
+                            <a href="#" class="product-cart">
+                                <img src="./img/cart-icon.png" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -134,7 +144,7 @@
                         <a href="#">New</a>
                     </div>
                     <div class="card-img">
-                        <img src="./img/Rectangle 10.png" alt="">
+                        <a href="#"><img src="./img/Rectangle 10.png" alt=""></a> 
                     </div>
                     <div class="card-content">
                         <div class="card-content-top">
@@ -154,9 +164,9 @@
                             <div class="product-price">
                                 <h5>$120,000</h5>
                             </div>
-                            <div class="product-cart">
-                                <a href="#"><i class="ri-shopping-cart-line"></i></a>
-                            </div>
+                            <a href="#" class="product-cart">
+                                <img src="./img/cart-icon.png" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -166,7 +176,7 @@
                         <a href="#">New</a>
                     </div>
                     <div class="card-img">
-                        <img src="./img/Rectangle 12.png" alt="">
+                        <a href="#"><img src="./img/Rectangle 12.png" alt=""></a> 
                     </div>
                     <div class="card-content">
                         <div class="card-content-top">
@@ -186,9 +196,9 @@
                             <div class="product-price">
                                 <h5>$120,000</h5>
                             </div>
-                            <div class="product-cart">
-                                <a href="#"><i class="ri-shopping-cart-line"></i></a>
-                            </div>
+                            <a href="#" class="product-cart">
+                                <img src="./img/cart-icon.png" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -199,16 +209,14 @@
     <section class="discount">
         <div class="container-full">
             <div class="row">
-                <marquee>
-                    <div class="slide-img">
-                        <img src="./img/Group 16.png" alt="">
-                        <img src="./img/Group 16.png" alt="">
-                        <img src="./img/Group 16.png" alt="">
-                        <img src="./img/Group 16.png" alt="">
-                        <img src="./img/Group 16.png" alt="">
-                        <img src="./img/Group 16.png" alt="">
-                    </div>
-                </marquee>
+                <div class="slide-img">
+                    <img src="./img/Group 16.png" alt="">
+                    <img src="./img/Group 16.png" alt="">
+                    <img src="./img/Group 16.png" alt="">
+                    <img src="./img/Group 16.png" alt="">
+                    <img src="./img/Group 16.png" alt="">
+                    <img src="./img/Group 16.png" alt="">
+                </div>
             </div>
         </div>
     </section>
@@ -219,16 +227,15 @@
                 <div class="heading">
                     <h2>T-shirt</h2>
                 </div>
-                <div class="icon">
-                    <a href="#">More</a>
-                    <i class="ri-arrow-right-line"></i>
-                </div>
+                <a href="#" class="icon">
+                    <span>More</span> <img src="./img/more-icon.png" alt=""></a>
+                </a>
             </div>
             <div class="row">
 
                 <div class="card">
                     <div class="card-img">
-                        <img src="./img/tshirt1.png" alt="">
+                       <a href="#"> <img src="./img/tshirt1.png" alt=""></a>
                     </div>
                     <div class="card-content">
                         <div class="card-content-top">
@@ -248,16 +255,16 @@
                             <div class="product-price">
                                 <h5>$120,000</h5>
                             </div>
-                            <div class="product-cart">
-                                <a href="#"><i class="ri-shopping-cart-line"></i></a>
-                            </div>
+                            <a href="#" class="product-cart">
+                                <img src="./img/cart-icon.png" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-img">
-                        <img src="./img/tshirt2.png" alt="">
+                        <a href="#"> <img src="./img/tshirt2.png" alt=""></a>
                     </div>
                     <div class="card-content">
                         <div class="card-content-top">
@@ -277,16 +284,16 @@
                             <div class="product-price">
                                 <h5>$120,000</h5>
                             </div>
-                            <div class="product-cart">
-                                <a href="#"><i class="ri-shopping-cart-line"></i></a>
-                            </div>
+                            <a href="#" class="product-cart">
+                                <img src="./img/cart-icon.png" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-img">
-                        <img src="./img/tshirt3.png" alt="">
+                        <a href="#"> <img src="./img/tshirt3.png" alt=""></a>
                     </div>
                     <div class="card-content">
                         <div class="card-content-top">
@@ -306,9 +313,9 @@
                             <div class="product-price">
                                 <h5>$120,000</h5>
                             </div>
-                            <div class="product-cart">
-                                <a href="#"><i class="ri-shopping-cart-line"></i></a>
-                            </div>
+                            <a href="#" class="product-cart">
+                                <img src="./img/cart-icon.png" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -322,16 +329,15 @@
                 <div class="heading">
                     <h2>Socks & cap</h2>
                 </div>
-                <div class="icon">
-                    <a href="#">More</a>
-                    <i class="ri-arrow-right-line"></i>
-                </div>
+                <a href="#" class="icon">
+                    <span>More</span> <img src="./img/more-icon.png" alt=""></a>
+                </a>
             </div>
             <div class="row">
 
                 <div class="card">
                     <div class="card-img">
-                        <img src="./img/Rectangle 16.png" alt="">
+                       <a href="#"> <img src="./img/Rectangle 16.png" alt=""></a>
                     </div>
                     <div class="card-content">
                         <div class="card-content-top">
@@ -351,16 +357,16 @@
                             <div class="product-price">
                                 <h5>$120,000</h5>
                             </div>
-                            <div class="product-cart">
-                                <a href="#"><i class="ri-shopping-cart-line"></i></a>
-                            </div>
+                            <a href="#" class="product-cart">
+                                <img src="./img/cart-icon.png" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-img">
-                        <img src="./img/Rectangle 18.png" alt="">
+                        <a href="#"> <img src="./img/Rectangle 18.png" alt=""></a>
                     </div>
                     <div class="card-content">
                         <div class="card-content-top">
@@ -380,16 +386,16 @@
                             <div class="product-price">
                                 <h5>$120,000</h5>
                             </div>
-                            <div class="product-cart">
-                                <a href="#"><i class="ri-shopping-cart-line"></i></a>
-                            </div>
+                            <a href="#" class="product-cart">
+                                <img src="./img/cart-icon.png" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-img">
-                        <img src="./img/Rectangle 20.png" alt="">
+                        <a href="#"> <img src="./img/Rectangle 20.png" alt=""></a>
                     </div>
                     <div class="card-content">
                         <div class="card-content-top">
@@ -409,9 +415,10 @@
                             <div class="product-price">
                                 <h5>$120,000</h5>
                             </div>
-                            <div class="product-cart">
-                                <a href="#"><i class="ri-shopping-cart-line"></i></a>
-                            </div>
+                            <a href="#" class="product-cart">
+                                <img src="./img/cart-icon.png" alt="">
+                            </a>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -425,16 +432,15 @@
                 <div class="heading">
                     <h2>Women</h2>
                 </div>
-                <div class="icon">
-                    <a href="#">More</a>
-                    <i class="ri-arrow-right-line"></i>
-                </div>
+                <a href="#" class="icon">
+                    <span>More</span> <img src="./img/more-icon.png" alt=""></a>
+                </a>
             </div>
             <div class="row">
 
                 <div class="card">
                     <div class="card-img">
-                        <img src="./img/Rectangle 23.png" alt="">
+                        <a href="#"><img src="./img/Rectangle 23.png" alt=""></a>
                     </div>
                     <div class="card-content">
                         <div class="card-content-top">
@@ -454,16 +460,16 @@
                             <div class="product-price">
                                 <h5>$120,000</h5>
                             </div>
-                            <div class="product-cart">
-                                <a href="#"><i class="ri-shopping-cart-line"></i></a>
-                            </div>
+                            <a href="#" class="product-cart">
+                                <img src="./img/cart-icon.png" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-img">
-                        <img src="./img/Rectangle 25.png" alt="">
+                        <a href="#"><img src="./img/Rectangle 25.png" alt=""></a>
                     </div>
                     <div class="card-content">
                         <div class="card-content-top">
@@ -483,16 +489,16 @@
                             <div class="product-price">
                                 <h5>$120,000</h5>
                             </div>
-                            <div class="product-cart">
-                                <a href="#"><i class="ri-shopping-cart-line"></i></a>
-                            </div>
+                            <a href="#" class="product-cart">
+                                <img src="./img/cart-icon.png" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-img">
-                        <img src="./img/Rectangle 27.png" alt="">
+                       <a href="#"><img src="./img/Rectangle 27.png" alt=""></a> 
                     </div>
                     <div class="card-content">
                         <div class="card-content-top">
@@ -512,9 +518,9 @@
                             <div class="product-price">
                                 <h5>$120,000</h5>
                             </div>
-                            <div class="product-cart">
-                                <a href="#"><i class="ri-shopping-cart-line"></i></a>
-                            </div>
+                            <a href="#" class="product-cart">
+                                <img src="./img/cart-icon.png" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -567,6 +573,8 @@
             </div>
         </div>
     </footer>
+
+
 </body>
 
 </html>
